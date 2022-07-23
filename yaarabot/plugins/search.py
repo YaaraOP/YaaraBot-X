@@ -21,7 +21,7 @@ from yaarabot.utils import admin_cmd
 @yaarabot.on(admin_cmd(outgoing=True, pattern=r"gs (.*)"))
 @yaarabot.on(sudo_cmd(allow_sudo=True, pattern=r"gs (.*)"))
 async def gsearch(q_event):
-    """ For .google command, do a Google search from @YaaraBotHelp. """
+    """For .google command, do a Google search from @YaaraBotHelp."""
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:

@@ -8,8 +8,8 @@ from datetime import datetime
 from selenium import webdriver
 
 from yaarabot import CMD_HELP
-from yaarabot.yaarabotConfig import Config
 from yaarabot.utils import admin_cmd
+from yaarabot.yaarabotConfig import Config
 
 
 @yaarabot.on(admin_cmd(pattern="screenlong (.*)"))

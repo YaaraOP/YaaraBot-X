@@ -1,4 +1,4 @@
-# by @KashDaYash ✨ 
+# by @KashDaYash ✨
 
 from yaarabot.plugins.mybot.sql.users_sql import get_user_id
 from telethon import events

@@ -14,15 +14,18 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from yaarabot.plugins import OWNER_ID, TELE_NAME
 import time
 from datetime import datetime
+
+from yaarabot.plugins import OWNER_ID, TELE_NAME
 from yaarabot.yaarabotConfig import Var
 
 # start-other disabled
 startotherdis = """
 Hi there. I am {}'s bot. Nice to see you here.
-""".format(TELE_NAME)
+""".format(
+    TELE_NAME
+)
 
 # start-other enabled
 if Var.PMBOT_START_MSSG is None:
@@ -31,7 +34,9 @@ Hi there, I am {}'s personal bot.
 You can contact him through me 😌.
 
 Have a nice time!
-""".format(TELE_NAME)
+""".format(
+        TELE_NAME
+    )
 else:
     MSSG = Var.PMBOT_START_MSSG
 startotherena = MSSG
@@ -39,7 +44,9 @@ startotherena = MSSG
 # start-owner
 startowner = """
 Welcome back {}. Choose the options available from below:
-""".format(TELE_NAME)
+""".format(
+    TELE_NAME
+)
 
 # for ping
 

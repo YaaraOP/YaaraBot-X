@@ -59,7 +59,7 @@ def humanbytes(size):
     if not size:
         return ""
     # 2 ** 10 = 1024
-    power = 2 ** 10
+    power = 2**10
     raised_to_pow = 0
     dict_power_n = {0: "", 1: "Ki", 2: "Mi", 3: "Gi", 4: "Ti"}
     while size > power:
@@ -88,7 +88,7 @@ def time_formatter(milliseconds: int) -> str:
 @yaarabot.on(admin_cmd(pattern="yt(a|v) (.*)"))
 @yaarabot.on(sudo_cmd(pattern="yt(a|v) (.*)", allow_sudo=True))
 async def download_video(v_url):
-    """ For .ytdl command, download media from YouTube and many other sites. """
+    """For .ytdl command, download media from YouTube and many other sites."""
     url = v_url.pattern_match.group(2)
     type = v_url.pattern_match.group(1).lower()
 
